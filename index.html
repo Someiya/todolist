@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="app">
+    <h1>My Todo</h1>
+
+    <div class="input-box">
+      <input id="taskInput" placeholder="Add task">
+      <button id="addBtn">Add</button>
+      <button id="darkToggle">🌙</button>
+    </div>
+
+    <p id="taskCount"></p>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <div class="lists">
+      <div class="card">
+        <h2>Todo</h2>
+        <ul id="taskList"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Completed</h2>
+        <ul id="completedList"></ul>
+      </div>
+    </div>
+
+    <button id="clearCompleted">Clear Completed</button>
+  </div>
+
+</body>
+</html>
